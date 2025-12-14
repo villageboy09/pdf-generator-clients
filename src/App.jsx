@@ -90,6 +90,15 @@ export default function App() {
     triggerPrint();
   }, []);
 
+  // Dynamic font size logic for the table based on item count
+  const getDynamicTableFontSize = () => {
+    if (!components || components.length <= 4) return "12px";
+    if (components.length <= 7) return "10px";
+    return "9px";
+  };
+
+  const tableFontSize = getDynamicTableFontSize();
+
   const styles = {
     container: {
       width: "80mm",
@@ -165,7 +174,7 @@ export default function App() {
       width: "100%",
       borderCollapse: "collapse",
       marginTop: "4px",
-      fontSize: "11px",
+      fontSize: tableFontSize,
     },
     th: {
       textAlign: "left",
