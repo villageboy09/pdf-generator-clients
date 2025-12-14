@@ -109,20 +109,18 @@ export default function App() {
     },
     header: {
       display: "flex",
-      flexDirection: "column",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: "space-between",
       borderBottom: "2px solid #2c3e50",
-      paddingBottom: "8px",
-      marginBottom: "8px",
+      paddingBottom: "4px",
+      marginBottom: "4px",
     },
     logoSection: {
       display: "flex",
       alignItems: "center",
-      justifyContent: "center",
-      marginBottom: "4px",
+      gap: "6px",
     },
-    logo: { height: "80px", width: "auto" },
+    logo: { height: "60px", width: "auto" },
     brandName: {
       fontSize: "16px",
       fontWeight: "800",
@@ -131,10 +129,9 @@ export default function App() {
       letterSpacing: "0.5px",
     },
     headerRight: {
-      textAlign: "center",
+      textAlign: "right",
       fontSize: "10px",
       color: "#555",
-      width: "100%",
     },
     sectionTitle: {
       fontSize: "12px",
